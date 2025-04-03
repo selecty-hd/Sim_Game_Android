@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.09" />
+
+        <TextView
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView3"
+            android:layout_weight="0.07" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_margin="30dp"
+            android:indeterminate="false"
+            android:max="100" />
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.19" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ファイルリスト・参照"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ファイル・ダウンロード"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="動作確認"
+            android:id="@+id/button3" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
